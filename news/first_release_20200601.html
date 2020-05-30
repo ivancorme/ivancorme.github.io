@@ -18,42 +18,81 @@
     <script src="../js/load-more-button.js"></script>
 </head>
 <body >
-    <header>
-        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white d-md-none">
+        <a href="#" class="navbar-brand">
+            <img src="../img/kanna_logo.png" height="28" alt="KANNA">
+        </a>
+        <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav pt-4">
+                <li class="nav-item">
+                    <a class="nav-link text-kanna-green" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./news/news.html" class="nav-link text-kanna-green pt-4">お知らせ</a>
+                </li>
+                <li class="nav-item">
+                    <div class="h-divider"></div>
+                </li>
+                <li class="nav-pills">
+                    <a href="./signup-kanna-beta.html" class="nav-item nav-link py-3 mx-5 mb-3 text-center">無料ではじめる</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white d-none d-md-block">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="../img/kanna_logo.png" height="28" alt="KANNA">
+                <img src="img/kanna_logo.png" height="28" alt="KANNA">
             </a>
-           <!--  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#function"  class="nav-link pr-5">機能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cost" class="nav-link pr-5">費用</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#news" class=" nav-link pr-5">お知らせ</a>
+                    </li>
+                </ul>
                 <div class="navbar-nav ml-auto ">
                     <div class="nav-pills">
                         <a href="./signup-kanna-beta.html" class="nav-item nav-link pr-3 pl-3">無料ではじめる</a>
                     </div>
                 </div>
-           <!--  </div> -->
-        </nav>
-    </header>
-
+            </div>
+        </div>
+    </nav>
+</header>
     <main class="container-fluid bg-kanna-beige text-center py-6" >
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
             <li class="breadcrumb-item"><a href="./news.html">お知らせ</a></li>
-            <span class="breadcrumb-item active">施工管理アプリ「KANNA」 リリースのお知らせ</span>
-
+<!--             <li class="breadcrumb-item active style="font-size: 12px;""  aria-current="page">施工管理アプリ「KANNA」 リリースのお知らせ<li>
+ -->        <li class="breadcrumb-item active" aria-current="page"><a href="./news.html">お知らせ</a></li>
         </ol>
     </nav>
-    <div class="container bg-white py-5">
-        <div class="text-left py-3 px-5">
-            <h2><strong><span class="kanna-underline">施</span>工管理アプリ「KANNA」 リリースのお知らせ</strong></h1>
+    <div id="news-main"class="container bg-white py-5">
+        <div class="text-left py-3 px-1">
+            <h2><strong><span class="kanna-underline">施</span>工管理アプリ「KANNA」リリースのお知らせ</strong></h1>
         </div>
-        <div class="text-kanna-grey text-left px-7 py-4">
+        <div id="news-date" class="text-kanna-grey text-left px-1 py-4">
             <p>2020年6月1日</p>
         </div>
-        <div class="text-left px-7">
+        <div class="text-left px-1">
 
         <p>株式会社アルダグラムは、2020年7月に施工管理アプリ「KANNA」をリリースいたします。<br><br>
 2019年12月より、ベータ版を複数の協力企業様にご利用いただき、シンプルで誰でも使いやすいサービスを目指し、開発してまいりました。<br><br>
