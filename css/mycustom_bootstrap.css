@@ -70,6 +70,15 @@ a {
     line-height: 24px !important;
 }
 
+.mobile-nav-font-1{
+  font-size: 14px;
+}
+
+.mobile-nav-font-2{
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .btn-primary, .btn-primary:hover  {
     color: #FFFFFF!important;
     background-color: var(--kanna-green);
@@ -202,13 +211,22 @@ h1:first-child{
     padding-top: 10rem!important
 }
 
-#mobile_kanna{
+#mobile-kanna{
   width: 100%;
 }
 
-#desktop_kanna{
+#desktop-kanna{
 /*  position: absolute;*/
   width: 100%;
+  object-fit: cover;
+  object-position: 50px 0px;
+}
+
+#date-release-box{
+  position: absolute;
+  left:50%;
+  margin-left: -73px;
+  bottom:-10%;
 }
 
 /*#container_worker_manager p{
@@ -398,9 +416,17 @@ h1:first-child{
   left: 14%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   height: auto;
-
 }
 
+#card-kanna h4{
+  font-size: 1.35em;
+  font-weight: 700;
+}
+
+#card-kanna h6{
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
 /*main index section function custom formatting*/
 
 #function h4{
@@ -813,4 +839,8 @@ header {
       left: 35%;
       width: 30%;
   }
+
+  #mobile-kanna{
+  width: 90%;
+}
 }

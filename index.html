@@ -25,16 +25,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav pt-4">
                 <li class="nav-item">
-                    <a class="nav-link text-kanna-green" href="index.html">HOME</a>
+                    <a class="nav-link text-kanna-green mobile-nav-font-1" href="index.html">TOP</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./news/news.html" class="nav-link text-kanna-green pt-4">お知らせ</a>
+                    <a href="./news/news.html" class="nav-link text-kanna-green pt-4 mobile-nav-font-1">お知らせ</a>
                 </li>
                 <li class="nav-item">
                     <div class="h-divider"></div>
                 </li>
                 <li class="nav-pills">
-                    <a href="./signup-kanna-beta.html" class="nav-item nav-link py-3 mx-5 mb-3 text-center">無料ではじめる</a>
+                    <a href="./signup-kanna-beta.html" class="nav-item nav-link py-3 mx-5 mb-3 text-center mobile-nav-font-2">無料ではじめる</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +51,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+           <!--  <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="#function"  class="nav-link pr-5">機能</a>
@@ -74,27 +75,30 @@
 </header>
 
 <section id="home" >
-    <div class="container-fluid mb-5 pt-5">
-        <div class="text-center pt-5">
-            <img src="img/kanna_logo.svg" alt="KANNA">
-        </div>
-        <div class="text-center">
-            <h2><p class="text-kanna-green pt-5 pb-3"><strong>0円でカンタン操作の <br/>施工管理アプリ</strong></p></h2> 
-            <a class="btn btn-primary btn-xl js-scroll-trigger mb-4" href="./signup-kanna-beta.html"><b>無料ではじめる</b></a>
-        </div>
+    <div class="container-fluid mb-5 pt-5 mt-5" style="position: relative;">
         <div class="row mb-4 align-items-end" style="position: relative;">
-            <div class="col-4">
-                <img id="mobile_kanna" src="img/kanna_mobile.svg" alt="KANNA">
+            <div class="col-12  col-md-6 text-center">
+                <div class="text-center pt-5">
+                    <img src="img/kanna_logo.svg" alt="KANNA" style="width: 50%; height: auto;">
+                </div>
+                <h2><p class="text-kanna-green pt-5 pb-3"><strong>0円でカンタン操作の <br/>施工管理アプリ</strong></p></h2> 
+                <a class="btn btn-primary btn-xl js-scroll-trigger mb-4" href="./signup-kanna-beta.html"><b>無料ではじめる</b></a>
             </div>
-            <div class="col-8">
-                <img id="desktop_kanna" src="img/kanna_desktop.svg" alt="KANNA">
+            <div class="col-4 col-md-2">
+                <img id="mobile-kanna" src="img/kanna_mobile.svg" alt="KANNA">
             </div>
+            <div class="col-8 col-md-4">
+                <img id="desktop-kanna" src="img/kanna_desktop.svg" alt="KANNA">
+            </div>
+        </div>
+        <div>
+            <img id="date-release-box" src="img/date_release_box.svg" alt="KANNA">
         </div>
     </div>
 </section>
 
 <section>
-    <div class="container-fluid bg-kanna-light-grey">
+    <div class="container-fluid bg-kanna-beige">
         <div id="container_worker_manager" class="container-fluid text-center mb-0">
             <div class="row">
                 <div class="col-2 col-md-2 px-0">
@@ -146,7 +150,7 @@
         </div>
         <div class="col-6 bg-kanna-green text-center pt-5 pb-8" >
             <img src="img/right_bubble_2.svg" alt="Random" class="rounded_circle img-fluid"> 
-            <a class="btn btn-primary btn-div mt-5 mb-3">AFTER</a>
+            <a class="btn btn-primary btn-div mt-5 mb-3 text-kanna-green">AFTER</a>
         </div>
         <div>
             <img id="arrow-image-mobile" class="text-center" src="img/arrow_mobile.svg">
@@ -343,19 +347,19 @@
     <footer class="font-small d-md-none">
         <div class="container-fluid bg-kanna-green pt-3 pb-3">
             <div class="row">
-                <div class="col-6 text-right">
+                <div class="col-5 text-right">
                     <a class="text-white" href="https://www.aldagram.com">会社概要</a>
                 </div>
-                <div class="col-6 text-left">
+                <div class="col-7 text-left">
                     <a class="text-white" href="https://forms.gle/9aom8889xnNcCHSv9">お問い合わせ</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 text-right">
-                    <span class="text-white"><strong>Aldagram</strong></span> 
+                <div class="col-5 text-right">
+                    <span class="text-white" style="font-size: 0.9rem"><strong>Aldagram</strong></span> 
                 </div>
-                <div class="col-6 text-left font-small">
-                    <span class="text-white font-small">© 2020 Aldagram Inc.</span>
+                <div class="col-7 text-left">
+                    <span class="text-white" style="font-size: 0.9rem">© 2020 Aldagram Inc.</span>
                 </div>
             </div>
         </footer>
