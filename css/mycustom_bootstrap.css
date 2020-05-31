@@ -510,7 +510,7 @@ h1:first-child{
 }
 
 .kanna-underline-news{
-  padding-bottom: 18px;
+  padding-bottom: 3px;
   border-bottom: 3px solid var(--kanna-green);
 }
 
