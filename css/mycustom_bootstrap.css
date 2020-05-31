@@ -223,13 +223,27 @@ h1:first-child{
   object-position: 50px 0px;
 }
 
-#date-release-box{
-  position: absolute;
-  left:50%;
-  margin-left: -73px;
-  bottom:-10%;
+/* begining of service worker and manager */
+#service .col-2{
+  margin-left:-10px;
+  margin-right:10px;
 }
+#service .col-8{
+  max-width: 60%;
+  margin-left: 15px;
+  padding-right: 5px;
+}
+#service .kanna_text{
+  font-size: 0.75rem;
+ }
 
+#date-release-box{
+    position: absolute;
+    left:50%;
+    margin-left: -17.5%;
+    bottom:-11%;
+    width: 35%;
+}
 /*#container_worker_manager p{
   font-size: 1.1rem;
   margin: 0rem;
@@ -410,12 +424,10 @@ h1:first-child{
   z-index: 1;
 }
 
+/*main index section home custom formatting*/
+
 .image-z{
   z-index: 10!important;
-}
-
-.row-circles{
-  margin-bottom: 12rem;
 }
 
 #card-kanna{
@@ -436,6 +448,14 @@ h1:first-child{
 #card-kanna h6{
   font-size: 0.9rem;
   line-height: 1.7;
+}
+
+.col-circles-color{
+  background: var(--kanna-green);
+}
+
+.row-circles{
+  margin-bottom: 12rem;
 }
 /*main index section function custom formatting*/
 
@@ -765,6 +785,18 @@ header {
 
 @media ( min-width: 768px ) {
 
+
+#date-release-box{
+  position: absolute;
+  left:50%;
+  margin-left: -73px;
+  bottom:-17%;
+}
+  /*main index section home custom formatting*/
+  .col-circles-color{
+    background: var(--kanna-light-grey)!important;
+  }
+
  .vertical-divider {
     position: absolute;
     z-index: 10;
@@ -836,6 +868,15 @@ header {
 
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  #date-release-box{
+    position: absolute;
+    left:50%;
+    margin-left: -10%;
+    bottom:-7.5%;
+    width: 20%;
+  }
+
+
   #card-kanna{
   position: absolute;
   top:10%;
@@ -851,8 +892,16 @@ header {
   }*/
 
 @media screen and (min-width: 768px) {
-.h-divider {
-  display:none;
+  .h-divider {
+    display:none;
+  }
+
+  #date-release-box{
+    position: absolute;
+    left:50%;
+    margin-left: -7.5%;
+    bottom:-16%;
+    width: 15%;
   }
 }
 
@@ -878,7 +927,18 @@ header {
  
 }
 
+
+@media only screen and (min-width: 992px){
+   #date-release-box{
+    position: absolute;
+    left:50%;
+    margin-left: -7.5%;
+    bottom:-16%;
+    width: 15%;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
   #card-kanna{
   position: absolute;
   top:10%;
@@ -891,16 +951,107 @@ header {
     font-size:14px;
   }
 
+  #img-circle-left{
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width:30%;
+  margin-right:20%;
+  /*margin-left: 5%;*/
+  position: relative;
+}
+
+#img-circle-right{
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width:20%;
+  margin-left:20%;
+  /*margin-right: 10%;*/
+  position: relative;
+}
+
+#card-kanna{
+  position:absolute;
+  top:15%;
+  left:-25%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: auto;
+
+}
+#right_bubble_2{
+  margin-left: 30%;
+  width:60%;
+}
+
+#left_bubble_2{
+  margin-right: 30%;
+  width: 60%;
+}
+
+#arrow-image{
+  width:65%; 
+  margin-left:12%;
+  z-index: 0;
+}
+
+#btn-after{
+  margin-left: 30%;
+
+}
+
+#btn-before{
+   margin-right: 30%;
+}
+
 }
 @media only screen and (min-width: 1200px) {
-    #card-kanna{
+ 
+/*#card-kanna{
       position: absolute;
       top: 15%;
       left: 35%;
       width: 30%;
   }
-
+*/
   #mobile-kanna{
   width: 90%;
 }
+
+#card-kanna{
+  position:absolute;
+  top:15%;
+  left:-25%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: auto;
+
+}
+#right_bubble_2{
+  margin-left: 30%;
+}
+
+#left_bubble_2{
+  margin-right: 30%;
+}
+
+#arrow-image{
+  width:65%; 
+  margin-left:12%;
+  z-index: 0;
+}
+
+#btn-after{
+  margin-left: 20%;
+
+}
+
+#btn-before{
+   margin-right: 20%;
+}
+
+
 }
