@@ -79,6 +79,7 @@ a {
   font-weight: bold;
 }
 
+
 .btn-primary, .btn-primary:hover  {
     color: #FFFFFF!important;
     background-color: var(--kanna-green);
@@ -334,6 +335,14 @@ h1:first-child{
   padding: 0;
 }*/
 
+#golden-circle{
+  position: absolute;
+  width:20%;
+  height: auto;
+  left:72%;
+  top:15%;
+  z-index: 0;
+}
 #circle-golden{
   width: 17%;
   padding-bottom:17%;
@@ -394,9 +403,9 @@ h1:first-child{
 
 #arrow-image-mobile{
   position:absolute;
-  top:56%;
+  top:52.5%;
   left:43%;
-  width: 17%;  
+  width: 15%;  
   height: auto;
   z-index: 1;
 }
@@ -411,15 +420,16 @@ h1:first-child{
 
 #card-kanna{
   position: absolute;
-  top: 72.5%;
+  top: 65%;
   width: 70%;
   left: 14%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   height: auto;
 }
 
+
 #card-kanna h4{
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 700;
 }
 
@@ -487,13 +497,21 @@ h1:first-child{
 /*news.html  custom formating*/
 
 #signup-kanna-box h1{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #signup-kanna-box h2{
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.7;
+}
 
+#signup-kanna-box img{
+  width:60%;
+}
+
+.kanna-underline-news{
+  padding-bottom: 18px;
+  border-bottom: 3px solid var(--kanna-green);
 }
 
 /*any news file  custom formating*/
@@ -509,6 +527,43 @@ h1:first-child{
 #news-main h2{
   font-size: 20px;
   line-height: 2rem;
+}
+
+/* concept section */
+
+#concept p{  
+  font-size:0.75rem
+  line-height:2.3
+}
+
+#concept .container-fluid{
+  background-image: url("../img/bg_concept_mobile.svg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+/* text footer mobile*/
+
+.text-footer-mobile{
+  font-size: .7rem;
+}
+
+/* signup prerelease */
+
+.btn-signup{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+
+
+/* */
+
+.btn-ba{
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .line {
@@ -787,7 +842,6 @@ header {
   bottom:10%;
   left:35%;
   width: 300px;
-  
   }
 }
 
@@ -795,6 +849,12 @@ header {
 
     font-size:12px;
   }*/
+
+@media screen and (min-width: 768px) {
+.h-divider {
+  display:none;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #card-kanna{

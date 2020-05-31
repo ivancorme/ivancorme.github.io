@@ -20,8 +20,8 @@
 <body >
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
-            <a href="#" class="navbar-brand">
-                <img src="../img/kanna_logo.png" height="28" alt="KANNA">
+            <a href="../index.html#home"class="navbar-brand">
+                <img src="../img/kanna_logo.png"  height="28" alt="KANNA">
             </a>
            <!--  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -30,14 +30,14 @@
             <div class="collapse navbar-collapse" id="navbarCollapse"> -->
                 <div class="navbar-nav ml-auto ">
                     <div class="nav-pills">
-                        <a href="./signup-kanna-beta.html" class="nav-item nav-link pr-3 pl-3">無料ではじめる</a>
+                        <a href="../signup-kanna-beta.html" class="nav-item nav-link pr-3 pl-3">無料ではじめる</a>
                     </div>
                 </div>
            <!--  </div> -->
         </nav>
     </header>
 
-    <main class="container-fluid bg-kanna-beige text-center py-6" >
+    <main class="container-fluid bg-kanna-beige text-left py-6" >
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
@@ -50,44 +50,57 @@
                 <h2 class="text-center pt-5"><strong>お知らせ</strong></h2>
                 <div class="about-border-bicolor mb-5"></div>
             </div>
-            <div class="fullbar-item w-100 cursor-pointer" onclick="location.href='./first_release_20200601.html'">
-                <div class="container">
-                    <div class="row py-3 py-md-5 align-items-center border-top blogBox moreBox">
-                        <div class="col-md-2">
-                            <p class="m-0">2020/06/01</p>
-                        </div>
-                        <div class="col-md-10">
-                            <h5 class="feed-item-heading m-0 font-weight-800">
-                                <a class="text-kanna-green" href="#">施工管理アプリ「KANNA」 リリースのお知らせ</a>
-                            </h5>
-                        </div>
+            <div class="container news-entry">
+                <div class="row py-3 py-md-5 align-items-center border-top border-bottom">
+                    <div class="col-md-2">
+                        <p>2020/06/01</p>
+                    </div>
+                    <div class="col-md-10">
+                        <h5>
+                            <a class="text-kanna-green" href="first_release_20200601.html">施工管理アプリ「KANNA」 リリースのお知らせ</a>
+                        </h5>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="container">
+          <!--   <div class="container">
              <div class="text-right pb-5">          
                 <a href="#news" class="text-kanna-green" id="loadMore">もっと見る</a>
             </div>
-        </div>
+        </div> -->
     </div>
-</div>
-</section>
- </div>
-
 </main>
-<footer class="font-small">
+<footer class="font-small  d-none d-md-block">
     <div class="container-fluid bg-kanna-green pt-3 pb-3">
         <div class="row align-items-center">
-            <div class="col-md-6 col-8 text-lg-left m">
-                <a class="text-white myfooter pr-3" href="https://www.aldagram.com"><strong>Aldagram</strong></a>
-                <a class="text-white pr-3" href="#!">会社概要</a>
-                <a class="text-white pr-3" href="#!">お問い合わせ</a>
+            <div class="col-md-6 col- text-lg-left m">
+                <span class="text-white myfooter pr-3"><strong>Aldagram</strong></span> 
+                <a class="text-white pr-3" href="https://www.aldagram.com">会社概要</a>
+                <a class="text-white pr-3" href="https://forms.gle/9aom8889xnNcCHSv9">お問い合わせ</a>
             </div>
-            <div class="col-md-6 col-4 text-lg-right">
-                <a class="text-white" href="https://www.aldagram.com">© 2020 Aldagram Inc.</a>
+            <div class="col-md-6 col-4 text-md-right">
+                <span class="text-white">© 2020 Aldagram Inc.</span>
             </div>
         </div>
     </footer>
+
+    <footer class="font-small d-md-none">
+        <div class="container-fluid bg-kanna-green pt-3 pb-3">
+            <div class="row">
+                <div class="col-6 text-right">
+                    <a class="text-white" href="https://www.aldagram.com">会社概要</a>
+                </div>
+                <div class="col-6 text-left">
+                    <a class="text-white" href="https://forms.gle/9aom8889xnNcCHSv9">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="row text-white align-items-baseline">
+                <div class="col-6 text-right">
+                    <span><strong>Aldagram</strong></span> 
+                </div>
+                <div class="col-6 text-left text-footer-mobile">
+                    <span>© 2020 Aldagram Inc.</span>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>                            
