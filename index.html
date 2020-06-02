@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>KANNA</title>
+    <title>無料で使える施工管理アプリ｜KANNA（カンナ）</title>
+    <meta name="description"  content="無料で使える施工管理アプリのKANNA（カンナ）は、建設・建築業界のテレワークを推進します。スマホやタブレットでどこからでもカンタンに現場情報を確認でき、図面・写真などの資料もクラウドで一元管理できます。" />
+    <meta name="keywords"  content="施工管理アプリ,KANNA,カンナ,かんな,建設,建築" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rfs.css">
 <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,10 +16,10 @@
 <script src="js/load-more-button.js"></script>
 </head>
 <body>
-   <header>
+<header>
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white d-md-none">
         <a href="#" class="navbar-brand">
-            <img src="img/kanna_logo.png" href="../index.html#home" height="28" alt="KANNA">
+            <img src="img/kanna_logo.png" href="../index.html#home" width="160" alt="KANNA">
         </a>
         <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +47,7 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white d-none d-md-block">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="img/kanna_logo.png" href="../index.html#home" height="28" alt="KANNA">
+                <img src="img/kanna_logo.png" href="../index.html#home" width="160" alt="KANNA">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +57,7 @@
              <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#function"  class="nav-link pr-5">機能</a>
+                        <a href="#function-up-desktop"  class="nav-link pr-5">機能</a>
                     </li>
                     <li class="nav-item">
                         <a href="#cost" class="nav-link pr-5">費用</a>
@@ -66,7 +68,7 @@
                 </ul>
                 <div class="navbar-nav ml-auto ">
                     <div class="nav-pills">
-                        <a href="./signup-kanna-beta.html" class="nav-item nav-link pr-3 pl-3">無料ではじめる</a>
+                        <a id="btn-navbar-desktop" href="./signup-kanna-beta.html" class="nav-item nav-link pr-3 pl-3">無料ではじめる</a>
                     </div>
                 </div>
             </div>
@@ -79,16 +81,16 @@
         <div class="row mb-4 align-items-end" style="position: relative;">
             <div class="col-12  col-md-6 text-center">
                 <div class="text-center pt-5">
-                    <img src="img/kanna_logo.svg" alt="KANNA" style="width: 70%; height: auto;" href="../index.html#home">
+                    <img id="img-logo-home" src="img/kanna_logo.svg" alt="KANNA" href="../index.html#home">
                 </div>
-                <h2><p class="text-kanna-green pt-5 pb-3"><strong>0円でカンタン操作の <br/>施工管理アプリ</strong></p></h2> 
-                <a class="btn btn-primary btn-xl btn-signup js-scroll-trigger mb-4" href="./signup-kanna-beta.html"><b>無料ではじめる</b></a>
+                <h2 class="text-kanna-green pt-5 pb-3"><strong>0円でカンタン操作の <br/>施工管理アプリ</strong></h2> 
+                <a class="btn btn-primary btn-xl btn-signup mb-4" href="./signup-kanna-beta.html"><b>無料ではじめる</b></a>
             </div>
             <div class="col-4 col-md-2">
-                <img id="mobile-kanna" src="img/kanna_mobile.svg" alt="KANNA">
+                <img id="img-mobile-kanna" src="img/kanna_mobile.svg" alt="KANNA">
             </div>
-            <div class="col-8 col-md-4">
-                <img id="desktop-kanna" src="img/kanna_desktop.svg" alt="KANNA">
+            <div class="col-8 col-md-4 pr-0">
+                <img id="img-desktop-kanna" src="img/kanna_desktop.svg" alt="KANNA">
             </div>
         </div>
         <div>
@@ -97,7 +99,7 @@
     </div>
 </section>
 
-<section id="service">
+<section id="service-first-mobile">
     <div class="container-fluid bg-kanna-beige">
         <div class="container-fluid text-center mb-0">
             <div class="row pb-0 pt-3 align-bottom">
@@ -115,8 +117,26 @@
     </div>
 </section>
 
-<!-- <section>
-    <div class="container-fluid">
+<section id="service-first-desktop">
+    <div class="container-fluid bg-kanna-beige">
+        <div class="container-fluid text-center mb-0">
+            <div class="row pb-0 pt-3 align-bottom">
+                    <div  class="col-2 col-md-2 px-0">
+                        <img src="img/kanna_worker.svg" alt="KANNA">
+                </div>
+                <div class="col-8 col-md-8 text-center align-self-right">
+                    <h2 class="pt-5 pb-5"><strong>施工管理アプリの KANNA（カンナ）は <br/>建設・建築業界のテレワーク化を推進します</strong></h2>
+                </div>
+                    <div class="col-2 col-md-2 px-0 align-bottom">
+                        <img src="img/kanna_manager.svg" alt="KANNA">
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="service-example-mobile">
+    <div  class="container-fluid">
         <div class="row row-circles" style="position: relative;">
             <div class="col-circles-color col-6 bg-kanna-green text-center pt-5 pb-8">
                 <img src="img/left_bubble_1.svg" alt="Random" class="rounded_circle img-fluid"> 
@@ -135,8 +155,8 @@
                 <div class="card-body pb-1">
                     <h4><span class="kanna-underline">どこからでもカンタンに</span></h4>
                     <h4>現場情報を確認できる</h4>
-                    <h6 class="text-dark text-left pr-2 pl-2 pt-3"><p>現場の基本情報をクラウド上に保存しているため、ノートPC・スマートフォン・タブレットがあれば、どこからでも最新の現場情報を確認できます。<br>
-                    自分の担当する案件を一目で確認できるため、何度もメールや電話で確認する必要がありません。</p></h6>
+                    <h6 class="text-dark text-left pr-2 pl-2 pt-3">現場の基本情報をクラウド上に保存しているため、ノートPC・スマートフォン・タブレットがあれば、どこからでも最新の現場情報を確認できます。<br>
+                    自分の担当する案件を一目で確認できるため、何度もメールや電話で確認する必要がありません。</h6>
                 </div>
             </div>
         </div>
@@ -150,7 +170,7 @@
         </div>
         <div class="col-6 bg-kanna-green text-center pt-5 pb-8" >
             <img src="img/right_bubble_2.svg" alt="Random" class="rounded_circle img-fluid"> 
-            <a class="btn btn-primary btn-div mt-5 mb-3 btn-ba text-kanna-green">AFTER</a>
+            <a class="btn btn-primary btn-div btn-ba mt-5 mb-3 text-kanna-green">AFTER</a>
         </div>
         <div>
             <img id="arrow-image-mobile" class="text-center" src="img/arrow_mobile.svg">
@@ -160,60 +180,84 @@
                 <div class="card-body pb-1">
                     <h4>図面などの資料も</h4>
                     <h4><span class="kanna-underline">クラウドで一元管理</span></h4>
-                    <h6 class="text-dark text-left pr-2 pl-2 pt-3"><p>KANNAを開けば、いつでもどこでも現場写真をアップロードできます。<br>
+                    <h6 class="text-dark text-left pr-2 pl-2 pt-3">KANNAを開けば、いつでもどこでも現場写真をアップロードできます。<br>
                     写真は現場情報に紐づいているため、写真検索にもう迷うことはありません。図面や仕様書などもクラウドに保存されるため、いつでもどこでも資料を確認できます。</p></h6>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</section> -->
+</section>
 
-   <section>
-        <div class="row mb-6" style="position: relative;">
+<section id="service-example-desktop" >
+        <div id="function-up-desktop" class="row mb-6" style="position: relative;">
             <div class="col-md-6 bg-kanna-light-grey text-center">
                 <div class="mt-6">
-                    <img id="left_bubble_2" src="img/left_bubble_2.svg" alt="Random" class="rounded_circle img-fluid" > 
+                    <img id="left_bubble_2" src="img/left_bubble_1.svg" alt="Random" class="rounded_circle img-fluid" > 
                 </div>
                 <div>
-                    <a id="btn-before" class="btn btn-primary btn-div mt-5 mb-6">BEFORE</a>
+                    <a id="btn-before" class="btn btn-primary btn-div btn-ba mt-5 mb-6">BEFORE</a>
                 </div>
             </div>
             <div class="col-md-6 bg-kanna-green text-center">
                 <div class="mt-6">
-<!--                     <img src="img/right_bubble_2.svg" alt="Random" id='img-circle-right' style="overflow: visible;"> 
- -->                    <img id="right_bubble_2" src="img/right_bubble_2.svg" alt="Random" class="rounded_circle img-fluid"> 
+                    <img id="right_bubble_2" src="img/right_bubble_1.svg" alt="Random" class="rounded_circle img-fluid"> 
                 </div>
                 <div>
-                    <a id="btn-after"class="btn btn-primary btn-div mt-5 mb-6">AFTER</a>
+                    <a id="btn-after"class="btn btn-primary btn-div btn-ba mt-5 mb-6 text-kanna-green">AFTER</a>
                 </div>
-<!--                 <div class="myarrow">
-                    <span class="arrow left"></span>
-                    <span class="line"></span>
-                    <span><i class="arrow_head right_arrow_head"></i></span>
-                    <span class="arrow right"></span>
-                </div> -->
                 <div>
                     <img id="arrow-image" class="text-center" src="img/arrow.png" >
                 </div>
                 <div id="card-kanna" class="col-md-6 col-md-offset-4 text-center text-kanna-green mb-5 px-0">
                     <div class="card border-0">
                        <div class="card-body rounded-bottom pb-4 pt-4">
-                        <h4 class="my-3 kanna-underline">どこからでもカンタンに</h4>
+                        <h4 class="my-3"><span class="kanna-underline">どこからでもカンタンに</span></h4>
                         <h4>現場情報を確認できる</h4>
-                        <h6 class="text-dark text-left pr-2 pl-2 pt-3"><p>現場の基本情報をクラウド上に保存しているため、ノートPC・スマートフォン・タブレットがあれば、どこからでも最新の現場情報を確認できます。
-                        自分の担当する案件を一目で確認できるため、何度もメールや電話で確認する必要がありません。</p></h6>
+                        <h6 class="text-dark text-left pr-2 pl-2 py-3">現場の基本情報をクラウド上に保存しているため、ノートPC・スマートフォン・タブレットがあれば、どこからでも最新の現場情報を確認できます。
+                        自分の担当する案件を一目で確認できるため、何度もメールや電話で確認する必要がありません。</h6>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div><i class="arrow_head right_arrow_head"></i></div> -->
+
+    <div class="row mb-6" style="position: relative;">
+            <div class="col-md-6 bg-kanna-light-grey text-center">
+                <div class="mt-6">
+                    <img id="left_bubble_2" src="img/left_bubble_2.svg" alt="Random" class="rounded_circle img-fluid" > 
+                </div>
+                <div>
+                    <a id="btn-before" class="btn btn-primary btn-div btn-ba mt-5 mb-6">BEFORE</a>
+                </div>
+            </div>
+            <div class="col-md-6 bg-kanna-green text-center">
+                <div class="mt-6">
+                    <img id="right_bubble_2" src="img/right_bubble_2.svg" alt="Random" class="rounded_circle img-fluid"> 
+                </div>
+                <div>
+                    <a id="btn-after"class="btn btn-primary btn-div btn-ba mt-5 mb-6 text-kanna-green">AFTER</a>
+                </div>
+                <div>
+                    <img id="arrow-image" class="text-center" src="img/arrow.png" >
+                </div>
+                <div id="card-kanna" class="col-md-6 col-md-offset-4 text-center text-kanna-green mb-5 px-0">
+                    <div class="card border-0">
+                       <div class="card-body rounded-bottom pb-4 pt-4">
+                        <h4 class="my-3">図面などの資料も</h4>
+                        <h4><span class="kanna-underline">クラウドで一元管理</span></h4>
+                        <h6 class="text-dark text-left pr-2 pl-2 py-3">KANNAを開けば、いつでもどこでも現場写真をアップロードできます。
+                    写真は現場情報に紐づいているため、写真検索にもう迷うことはありません。図面や仕様書などもクラウドに保存されるため、いつでもどこでも資料を確認できます。</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 
-<section id="function">
+<section id="function-down">
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col-md-4 text-kanna-green">
@@ -243,77 +287,52 @@
 </section>
 
 <section class="bg-kanna-beige" id="cost">
-    <div class="container text-center">
+    <div id="cost-cards-1" class="container text-center">
         <h1><p class="pt-5"><b>費用</b></p></h1> 
         <div class="about-border-bicolor mb-3"></div>
-        <h5><p class="pb-3 pt-3 pr-5 pl-5">KANNAは、<strong>0円でカンタンに使える施工管理アプリ</strong>です。<br/><br/>インターネット環境があれば、どこでも使えます。 </p></h5>
-
-      <!--    <div class="row text-center justify-content-center align-self-right mb-5">
-            <div class="col-md-4 mb-3">
-                <div class="circle">
-                    <h3>初期費用 0円</h3>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-3">
-                 <div class="circle">
-                    <h3>月額費用 0円</h3>
-                </div>
-            </div>
-                            
-             <div class="col-md-4 mb-3">
-                <div class="circle">
-                    <h3>アカウント無制限</h3>
-                </div>
-            </div>              
-        </div>
-    <div> 
-    -->
+        <h5 class="pb-3 pt-3 pr-5 pl-5">KANNAは、<strong>0円でカンタンに使える施工管理アプリ</strong>です。<br/><br/>インターネット環境があれば、どこでも使えます。</h5>
     <div class="row row-divided mb-4">
         <div class="col-md-6 col-12 text-center text-kanna-green mb-5">
-            <div class="card rounded-corner border-0">
-                <p class="card-header bg-kanna-green text-white" style="font-size:28px;"><b>月額利用料</b></p>
+            <div class="card border-0">
+                <div class="card-header bg-kanna-green text-white">
+                    <p style="font-size:28px;"><b>月額利用料</b></p>
+                </div>
             </div>
-            <div class="card-body bg-white rounded-bottom">
-                <p class="text-kanna-green" style="font-size:92px;"><b>0</b><span style="font-size:42px;"> <b>円</b></span></p>
+            <div id="card-body-cost-1"class="card-body bg-white">
+                <p id="p-cost-11"class="text-kanna-green"><b>0</b><span id="p-cost-12"> <b>円</b></span></p>
             </div>
         </div>
         <div class="col-md-3 col-6 text-center text-kanna-green mb-4">
             <div class="card border-0">
-                <div class="card-body rounded-bottom">
-                    <p class="pt-3" style="font-size: 18px">初期費用</p>
-                    <p class="pb-0" style="font-size: 60px; line-height: 34px;"><b>0</b><span style="font-size:24px;"> 円</span></p>
+                <div id="card-body-cost-2" class="card-body" >
+                    <p id="p-cost-21">初期費用</p>
+                    <p id="p-cost-22"><b>0</b><span id=p-cost-23> 円</span></p>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-6 text-center text-kanna-green mb-4">
             <div class="card border-0">
-                <div class="card-body rounded-bottom">
-                    <p class="pt-3" style="font-size: 18px">アカウント数</p>
-                    <p class="pb-0" style="font-size: 34px; line-height: 48px;"><b>無制限</b></p>
+                <div id="card-body-cost-3" class="card-body">
+                    <p id="p-cost-31">アカウント数</p>
+                    <p id="p-cost-32"><b>無制限</b></p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-    <div>
-        <h3><p class="text-center mb-5"><b>オプション</b></h3></p>
-        <h6><p class="text-center mb-3"> 無料で保存できる容量は２GBですが、より多くの写真・資料を保存したい会社様向けに</p></h6>
-        <h6><p class="text-center mb-5">1TBずつ容量を追加購入していただくプランを用意しています。</p></h6>
+    <div id="cost-cards-2">
+        <h3 class="text-center mb-5"><b>オプション</b></h3>
+        <h6 class="text-center mb-3"> 無料で保存できる容量は２GBですが、より多くの写真・資料を保存したい会社様向けに</h6>
+        <h6 class="text-center mb-5">1TBずつ容量を追加購入していただくプランを用意しています。</h6>
     </div>
-    <div class="card border-0">
+    <div id="cost-cards-3" class="card border-0">
         <h5 class="card-header bg-kanna-green text-white"><b>容量１TB追加</b></h5>
-        <div class="card-body bg-white rounded-bottom">
+        <div class="kanna-card-cost card-body bg-white">
             <div class="row row-divided" style="position: relative;">
                 <div class="col-md-6 text-center text-kanna-green" style="position:relative;">
-                    <h6 class="pt-4 pb-3" style="z-index:1; position: relative">年額一括払い</h6>
-                    <h3 style="z-index:1; position: relative"><b><span style="font-size: 32px;">16,500</span><span style="font-size:24px;">円／月</span></b></h3>
+                    <h6 class="pt-4 pb-3">年額一括払い</h6>
+                    <h3><b><span style="font-size: 2.5rem;">16,500</span><span style="font-size:24px;">円／月</span></b></h3>
                     <p class="h7 text-kanna-grey">年間 198,000円</p>
-         <!--            <div id="circle-golden">
-                        <h3><b>2ヶ月分お得</b></h3>
-                    </div> -->
                 <div class="h-divider"></div>
                 <div>
                     <img id=golden-circle src="img/golden_circle.svg"alt="KANNA">
@@ -321,17 +340,15 @@
                 </div>
                 <div class="vertical-divider"></div>
                 <div class="col-md-6 text-center text-kanna-green">
-                    <h6 class="pt-4 pb-3" style="z-index:1; position: relative">月額払い</h6>
-                    <h3 style="z-index:1; position: relative"><b><span style="font-size: 32px;">19,800</span><span style="font-size:24px;">円／月</b></h3>
-                <!-- <h6 class="card-title text-kanna-green mt-auto">年額一括払い</h6>
-                    <h3 class="card-text mt-auto"><strong>19,800円／月</strong></h3> -->
+                    <h6 class="pt-4 pb-3">月額払い</h6>
+                    <h3><b><span style="font-size: 2.5rem;">19,800</span><span style="font-size:24px;">円／月</b></h3>
                     <p class="h7 text-kanna-grey">年間 237,600円</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
+    <div id="cost-tax-excluded">
         <p class="text-kanna-grey text-right py-2">※すべて税抜き価格です</p>
     </div>
     <div class="text-center">
@@ -347,14 +364,13 @@
         <h2><b>コンセプト</b></h2>
         <p> KANNA（カンナ）は、工具の鉋から命名しました。<br>移動やコミュニケーションの手間を鉋のように削り、<br>施工など生産性の高い時間を生み出すお手伝いをしたいという想いから KANNAと名付けました。 <br>またサービスロゴは「組木」をイメージしています。<br>KANNAを利用する皆様と組木のような強固な関係を築き、<br>チームとして共に成長していきたいとの願いを込めました。</p>
     </div>
-    
 </section>
 
 <section class="mt-5" id="news">
     <div class="container-fluid mb-5">
         <div class="container bg-white">
             <div class="container">
-                <h2 class="text-center pt-5"><strong>お知らせ</strong></h2>
+                <h1 class="text-center pt-5"><strong>お知らせ</strong></h1>
                 <div class="about-border-bicolor mb-5"></div>
             </div>
             <div class="container news-entry">
@@ -386,7 +402,7 @@
                 <a class="text-white pr-3" href="https://www.aldagram.com">会社概要</a>
                 <a class="text-white pr-3" href="https://forms.gle/9aom8889xnNcCHSv9">お問い合わせ</a>
             </div>
-            <div class="col-md-6 col-4 text-md-right">
+            <div id="footer-desktop-aldagram-inc"class="col-md-6 col-4 text-md-right">
                 <span class="text-white">© 2020 Aldagram Inc.</span>
             </div>
         </div>

@@ -212,11 +212,11 @@ h1:first-child{
     padding-top: 10rem!important
 }
 
-#mobile-kanna{
+#img-mobile-kanna{
   width: 100%;
 }
 
-#desktop-kanna{
+#img-desktop-kanna{
 /*  position: absolute;*/
   width: 100%;
   object-fit: cover;
@@ -224,17 +224,25 @@ h1:first-child{
 }
 
 /* begining of service worker and manager */
-#service .col-2{
+#service-first-mobile .col-2{
   margin-left:-10px;
   margin-right:10px;
 }
-#service .col-8{
+#service-first-mobile .col-8{
   max-width: 60%;
   margin-left: 15px;
   padding-right: 5px;
 }
-#service .kanna_text{
+#service-first-mobile .kanna_text{
   font-size: 0.75rem;
+ }
+
+ #service-example-desktop{
+  display: none;
+ }
+
+ #service-first-desktop{
+  display: none;
  }
 
 #date-release-box{
@@ -244,34 +252,7 @@ h1:first-child{
     bottom:-11%;
     width: 35%;
 }
-/*#container_worker_manager p{
-  font-size: 1.1rem;
-  margin: 0rem;
-}*/
-/*#kanna_worker{
-  position: absolute;
-  width: 10%;
-  left: 3%;
-  top:4%;
-  padding-top: 2rem;
-}*/
 
-/*#kanna_worker{
-
-}*/
-
-/*#kanna_manager{
-  position: absolute;
-  width: 15%;
-  right: 5%;
-  top:1%;
-  padding-top: 2rem;
-}*/
-
-/*#kanna_manager{
-  margin: 0;
-}
-*/
 .h-divider{
  margin-top:30px;
  margin-bottom:30px;
@@ -406,15 +387,6 @@ h1:first-child{
   transform: rotate(90deg);
 }
 
-#arrow-image{
-  position:absolute;
-  top:35%;
-  left:-45%;
-  width: 90%;  
-  height: auto;
-  z-index: 1;
-}
-
 #arrow-image-mobile{
   position:absolute;
   top:52.5%;
@@ -430,12 +402,29 @@ h1:first-child{
   z-index: 10!important;
 }
 
+.card{
+  border-radius: .5rem .5rem;
+  background-color: white!important;
+}
+
+.card-body {
+   /* -ms-flex: 1 1 auto;
+    flex: 1 1 auto;*/
+    padding: 1.25rem;
+    border-radius: 0rem 0rem .5rem 0.5rem;
+}
+
+.card-header {
+  border-radius: 0.5rem 0.5rem 0rem 0rem!important;
+}
+
 #card-kanna{
   position: absolute;
   top: 65%;
   width: 70%;
   left: 14%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: .5rem .5rem;
   height: auto;
 }
 
@@ -459,17 +448,21 @@ h1:first-child{
 }
 /*main index section function custom formatting*/
 
-#function h4{
+#function-down h4{
   font-weight: bold;
+  margin-right: 2rem!important;
+  margin-left: 2rem!important;
 }
 
-#function p{
+#function-down p{
   font-size: 14px;
   color: #343a40!important;
   text-align: left!important;
   padding-top: 1.5rem!important;
-  padding-left: 5rem!important;
-  padding-right: 5rem!important;
+  padding-left: 0rem!important;
+  padding-right: 0rem!important;
+  margin-right: 2rem!important;
+  margin-left: 2rem!important;
 }
 
 /*main index section concept custom formatting*/
@@ -491,11 +484,69 @@ h1:first-child{
   padding-top: 2rem;
 }
 
+/*main index section cost custom formatting*/
+
+
+#card-body-cost-1{
+  height: 160px;
+}
+
+#card-body-cost-2{
+  height: 160px;
+}
+
+#card-body-cost-3{
+  height: 160px;
+}
+
+#p-cost-11{
+  font-size:92px;
+}
+
+#p-cost-12{
+  font-size:42px;
+}
+
+#p-cost-21{
+  font-size: 24px;
+  padding-top: 3rem;
+}
+
+#p-cost-22{
+  font-size: 60px;
+  line-height: 34px;
+  padding-bottom: 0rem;
+}
+
+#p-cost-23{
+  font-size:24px;
+}
+
+#p-cost-31{
+  font-size: 18px
+  padding-top: 3rem;
+}
+
+#p-cost-32{
+  font-size: 34px;
+  line-height: 48px;
+  padding-bottom: 0rem;
+}
+
+.kanna-card-cost h6{
+  z-index:1; 
+  position: relative;
+}
+
+.kanna-card-cost h3{
+  z-index:1; 
+  position: relative;
+}
 
 /*main index section news custom formating*/
 
 .news-entry p{
-  font-size: 10px!important;
+  font-size: 10px;
   margin-top: .25rem;
   margin-bottom: 1rem;
 }
@@ -768,22 +819,75 @@ header {
     font-size: 14px;
  }
 
-.card {
-    background-color: white!important;
-}
-
-.card-body {
-   /* -ms-flex: 1 1 auto;
-    flex: 1 1 auto;*/
-    padding: 1.25rem;
-}
-
 .kanna-underline{
   padding-bottom: 3px;
   border-bottom: 3px solid var(--kanna-green);
 }
 
-@media ( min-width: 768px ) {
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #date-release-box{
+    position: absolute;
+    left:50%;
+    margin-left: -10%;
+    bottom:-7.5%;
+    width: 20%;
+  }
+
+  #card-kanna{
+    position: absolute;
+    top: 80%;
+    width: 70%;
+    left: 14%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: .5rem .5rem;
+    height: auto;
+  }
+
+  #arrow-image{
+    width:70%; 
+    margin-left:10%;
+    top:40%;
+    z-index: 0;
+  }
+
+  #btn-after{
+    margin-left: 30%;
+
+  }
+
+  #btn-before{
+   margin-right: 30%;
+ }
+
+#arrow-image-mobile{
+  position:absolute;
+  top:360px;
+  left:43%;
+  width: 15%;  
+  height: auto;
+  z-index: 1;
+}
+
+}
+
+@media only screen and ( min-width: 768px ) {
+
+/*main index section home formating */
+#home h2{
+  font-size:2.25rem;
+  line-height:1.7;
+}
+
+#home a{
+  width:343px;
+  font:1.75rem;
+}
+
+#img-logo-home{
+  width:387px;
+}
 
 
 #date-release-box{
@@ -792,12 +896,79 @@ header {
   margin-left: -73px;
   bottom:-17%;
 }
+
+/* main index section service in desktop */
+
+#service-first-desktop h2{
+  line-height: 1.7;
+  font-size: 1.7rem;
+}
   /*main index section home custom formatting*/
+
+#function-down p{
+  font-size: 14px;
+  color: #343a40!important;
+  text-align: left!important;
+  padding-top: 1.5rem!important;
+  padding-left: 0rem!important;
+  padding-right: 0rem!important;*/
+}
   .col-circles-color{
     background: var(--kanna-light-grey)!important;
   }
 
- .vertical-divider {
+
+/* main cost section formatting*/
+
+#card-body-cost-1{
+  height: 160px;
+}
+
+#card-body-cost-2{
+  height: 243px;
+}
+
+#card-body-cost-3{
+  height: 243px;
+}
+
+#p-cost-11{
+  font-size:92px;
+}
+
+#p-cost-12{
+  font-size:42px;
+}
+
+#p-cost-21{
+  font-size:1.375rem;
+  font-weight:700;
+  padding-top: 3rem;
+}
+
+#p-cost-22{
+  font-size: 60px;
+  line-height: 34px;
+  padding-bottom: 0rem;
+}
+
+#p-cost-23{
+  font-size:24px;
+}
+
+#p-cost-31{
+  font-size:1.375rem;
+  font-weight:700;
+  padding-top: 3rem;
+}
+
+#p-cost-32{
+  font-size: 34px;
+  line-height: 48px;
+  padding-bottom: 0rem;
+}
+
+  .vertical-divider {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -847,55 +1018,26 @@ header {
     padding-left: 30px;  /* gutter width (give a little extra room) 2x default */
     padding-right: 30px; /* gutter width (give a little extra room) 2x default */
   }
- 
-}
 
-.image {
-    position: absolute;
-    left:10%;
-    bottom: 0%
-    width:100%;
-    height: auto;
-}
-
-.main-photo {
-    display: block;
-    width: 842px;
-    height: 176px;
-    background-color: red;
-    margin: 0 auto;
-}
-
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  #date-release-box{
-    position: absolute;
-    left:50%;
-    margin-left: -10%;
-    bottom:-7.5%;
-    width: 20%;
-  }
-
-
-  #card-kanna{
-  position: absolute;
-  top:10%;
-  bottom:10%;
-  left:35%;
-  width: 300px;
-  }
-}
-
- /* #card-kanna h6{
-
-    font-size:12px;
-  }*/
-
-@media screen and (min-width: 768px) {
-  .h-divider {
+   .h-divider {
     display:none;
   }
 
+  #service-example-mobile{
+    display:none;
+  }
+
+  #service-example-desktop{
+    display: block;
+  }
+
+ #service-first-mobile{
+    display:none;
+  }
+
+  #service-first-desktop{
+    display: block;
+  }
   #date-release-box{
     position: absolute;
     left:50%;
@@ -903,25 +1045,63 @@ header {
     bottom:-16%;
     width: 15%;
   }
+
+  #arrow-image{
+  position:absolute;
+  top:35%;
+  left:-45%;
+  width: 90%;  
+  height: auto;
+  z-index: 1;
+  }
+ 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #card-kanna{
-  position: absolute;
-  top:10%;
-  left:34%;
-  width: 32%;
   
-  }
+#card-kanna{
+  position:absolute;
+  top:15%;
+  left:-25%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: auto;
+
+}
+#right_bubble_2{
+  margin-left: 30%;
+  width:50%;
+}
+
+#left_bubble_2{
+  margin-right: 30%;
+  width: 50%;
+}
+
+#arrow-image{
+  width:70%; 
+  margin-left:10%;
+  top:40%;
+  z-index: 0;
+}
+
+#btn-after{
+  margin-left: 30%;
+
+}
+
+#btn-before{
+   margin-right: 30%;
+}
 
   #card-kanna h6{
 
-    font-size:.75rem;
+    font-size:.65rem;
   }
 
   #card-kanna h4{
 
-    font-size:1.15rem;
+    font-size:.85rem;
   }
 
  
@@ -984,12 +1164,12 @@ header {
 }
 #right_bubble_2{
   margin-left: 30%;
-  width:60%;
+  width:50%;
 }
 
 #left_bubble_2{
   margin-right: 30%;
-  width: 60%;
+  width: 50%;
 }
 
 #arrow-image{
@@ -1017,6 +1197,10 @@ header {
       width: 30%;
   }
 */
+
+#btn-navbar-desktop{
+  font-size: .625rem;
+}
   #mobile-kanna{
   width: 90%;
 }
@@ -1025,11 +1209,18 @@ header {
   position:absolute;
   top:15%;
   left:-25%;
-  width: 100%;
+  width: 348px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   height: auto;
 
 }
+
+#card-kanna h6{
+  width: 240px; 
+  margin:0 auto;
+  font-size: 14px;
+}
+
 #right_bubble_2{
   margin-left: 30%;
 }
@@ -1039,19 +1230,95 @@ header {
 }
 
 #arrow-image{
-  width:65%; 
-  margin-left:12%;
+  width:75%; 
+  margin-left:8%;
   z-index: 0;
 }
 
 #btn-after{
-  margin-left: 20%;
+  margin-left: 30%;
 
 }
 
 #btn-before{
-   margin-right: 20%;
+   margin-right: 30%;
 }
 
+/*index cards of cost*/
+
+#golden-circle{
+  position: absolute;
+  width:20%;
+  height: auto;
+  left:67%;
+  top:5%;
+  z-index: 0;
+}
+
+#concept h2{
+  text-align: center;
+}
+
+#concept p{
+  text-align: center;
+  font-size: 14px;
+}
+
+#concept .container-fluid{
+  background-image: url("../img/bg_concept_desktop.svg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+#cost h1{
+  font-size:2.25rem;
+}
+
+#cost-cards-1 h5 {
+  font-size:1.25rem;
+  line-height:1;
+}
+
+#cost-cards-2 h3 {
+  font-size:1.5em;
+}
+
+#cost-cards-2 h6 {
+  font-size:1rem;
+  line-height:1.6;
+}
+
+#cost-cards-3 h5 {
+  font-size:1.5rem;
+}
+
+.kanna-card-cost h6{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#cost-tax-excluded{
+  font-size: .875rem;
+}
+
+#news h1{
+  font-size:2.25rem;
+}
+
+.news-entry a{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.news-entry p{
+  font-size: 1rem;
+}
+#footer-desktop-aldagram-inc{
+  font-size: .625rem;
+}
 
 }
