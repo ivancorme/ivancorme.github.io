@@ -16,10 +16,12 @@
    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/load-more-button.js"></script>
 </head>
-<body >
+<body class="bg-kanna-beige">
+    <div id="page-container">
+   <div id="content-wrap">
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
-            <a href="../index.html#home"class="navbar-brand">
+            <a href="../index.html#home" class="navbar-brand">
                 <img src="../img/kanna_logo.png"  height="28" alt="KANNA">
             </a>
            <!--  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -37,28 +39,30 @@
     </header>
 
     <main class="container-fluid bg-kanna-beige text-left py-6" >
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb mb-3">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.html">ホーム</a></li>
             <span class="breadcrumb-item active">お知らせ</span>
 
         </ol>
     </nav>
-    <div class="container bg-white py-5">
+    <div id="news-container" class="container bg-white pt-4 pb-6 my-4">
              <div class="container">
                 <h2 class="text-center pt-5"><strong>お知らせ</strong></h2>
-                <div class="about-border-bicolor mb-5"></div>
+                <div class="about-border-bicolor"></div>
             </div>
             <div class="container news-entry">
-                <div class="row py-3 py-md-5 align-items-center border-top border-bottom">
-                    <div class="col-md-2">
+                <div class="row py-3 py-md-5 align-items-center">
+                    <div class="h-divider"></div>
+                    <div class="col-md-3 text-right">
                         <p>2020/06/01</p>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-9">
                         <h5>
                             <a class="text-kanna-green" href="first_release_20200601.html">施工管理アプリ「KANNA」 リリースのお知らせ</a>
                         </h5>
                     </div>
+                    <div class="h-divider"></div>
                 </div>
             </div>
           <!--   <div class="container">
@@ -68,7 +72,8 @@
         </div> -->
     </div>
 </main>
-<footer class="font-small  d-none d-md-block">
+</div>
+<footer class="font-small  d-none d-md-block footer">
     <div class="container-fluid bg-kanna-green pt-3 pb-3">
         <div class="row align-items-center">
             <div class="col-md-6 col- text-lg-left m">
@@ -76,13 +81,14 @@
                 <a class="text-white pr-3" href="https://www.aldagram.com">会社概要</a>
                 <a class="text-white pr-3" href="https://forms.gle/9aom8889xnNcCHSv9">お問い合わせ</a>
             </div>
-            <div class="col-md-6 col-4 text-md-right">
+            <div class="col-md-6 col-4 text-md-right footer-aldagram-inc">
                 <span class="text-white">© 2020 Aldagram Inc.</span>
             </div>
         </div>
+    </div>
     </footer>
 
-    <footer class="font-small d-md-none">
+    <footer class="font-small d-md-none footer">
         <div class="container-fluid bg-kanna-green pt-3 pb-3">
             <div class="row">
                 <div class="col-6 text-right">
@@ -96,10 +102,12 @@
                 <div class="col-6 text-right">
                     <span><strong>Aldagram</strong></span> 
                 </div>
-                <div class="col-6 text-left text-footer-mobile">
+                <div class="col-6 text-left footer-aldagram-inc">
                     <span>© 2020 Aldagram Inc.</span>
                 </div>
             </div>
+        </div>
         </footer>
+    </div>
 </body>
 </html>                            

@@ -15,9 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
+body, html {
+  margin:0;
   padding: 0;
+  height: 100%;
 }
 
 /*remove dotted outline anchor links*/
@@ -202,14 +203,24 @@ h1:first-child{
     padding-right: 7rem!important
 }
 
-.pb-8,
-.py-8 {
-    padding-bottom: 10rem!important
+.pb-4rem,
+.py-4rem {
+    padding-bottom: 4rem!important
 }
 
-.pt-8,
-.py-8 {
-    padding-top: 10rem!important
+.pt-4rem,
+.py-4rem {
+    padding-top: 4rem!important
+}
+
+.mb-4rem,
+.my-4rem {
+    margin-bottom: 4rem!important
+}
+
+.mt-4rem,
+.my-4rem {
+    margin-top: 4rem!important
 }
 
 #img-mobile-kanna{
@@ -254,6 +265,16 @@ h1:first-child{
 }
 
 .h-divider{
+ margin-top:30px;
+ margin-bottom:30px;
+ height:1px;
+ width:100%;
+ border-top:1px solid rgba(17, 17, 17, .1);;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+#h-divider{
  margin-top:30px;
  margin-bottom:30px;
  height:1px;
@@ -465,6 +486,10 @@ h1:first-child{
   margin-left: 2rem!important;
 }
 
+.col-max-333{
+  max-width:333px;
+}
+
 /*main index section concept custom formatting*/
 
 #concept{
@@ -588,23 +613,31 @@ h1:first-child{
 /*any news file  custom formating*/
 
 #news-main p{
-  font-size: 14px;
+  padding-left:1rem;
+  padding-right:1rem;
+  font-size: .875rem;
 }
 
 #news-date p{
-  font-size: 10px;
+  font-size: .875rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #news-main h2{
-  font-size: 20px;
-  line-height: 2rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  font-size: 1rem;
+  line-height: 2;
 }
 
 /* concept section */
 
 #concept p{  
-  font-size:0.75rem
-  line-height:2.3
+  font-size:1rem;
+  line-height:2.3;
 }
 
 #concept .container-fluid{
@@ -617,8 +650,8 @@ h1:first-child{
 }
 /* text footer mobile*/
 
-.text-footer-mobile{
-  font-size: .7rem;
+.footer-aldagram-inc{
+  font-size: .65rem;
 }
 
 /* signup prerelease */
@@ -719,22 +752,35 @@ h1:first-child{
     right:0;
 }*/
 
-.footer {
-  color: #00A26A;
-  padding-top: 44px;
-  background-color: #00A26A;
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-.footer .a {
-	font-size: 10px!important;
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
 }
+
+.footer {
+  color: var(--kanna-green);
+  background-color: var(--kanna-green);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:50px;
+  left:0;
+}
+
+/*.footer .a {
+	font-size: 10px!important;
+}*/
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #00A26A;
-    border-color: #00A26A
+    border-color: #00A26A;
 }
 
 footer a{
@@ -756,7 +802,7 @@ header {
     margin-bottom: 1rem;
     list-style: none;
     background: none;
-    border-radius: .25rem
+    border-radius: .25rem;
     color: var(--kanna-grey);
 }
 
@@ -767,10 +813,12 @@ header {
     margin-bottom:0;
     list-style:none;
     background-color:none;
-    border-radius:0
+    border-radius:0;
 }
 .breadcrumb-item+.breadcrumb-item {
-    padding-left: .5rem
+    font-size: 12px;
+    padding-left: .5rem;
+    padding-top:4px;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -778,41 +826,25 @@ header {
     padding-right: .5rem;
     color: var(--kanna-grey);
     font-size: 12px;
-    content: ">"
+    content: ">";
 }
 
 .breadcrumb-item+.breadcrumb-item:hover::before {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .breadcrumb-item+.breadcrumb-item:hover::before {
-    text-decoration: none
+    text-decoration: none;
+}
+
+.breadcrumb-item.active{
+    color: var(--kanna-grey);
 }
 
 .breadcrumb li a{
 	color: var(--kanna-green);
   font-size: 12px;
 }
-
-/*
-.breadcrumb-item+.breadcrumb-item{
-    padding-left:0.5rem
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    display:inline-block;
-    padding-right:0.5rem;
-    color:#6c757d;
-    content:"/"
-}
-.breadcrumb-item+.breadcrumb-item:hover::before{
-    text-decoration:underline
-}
-.breadcrumb-item+.breadcrumb-item:hover::before{
-    text-decoration:none
-}
-.breadcrumb-item.active{
-    color:#6c757d
-}*/
 
 
 .h7{
@@ -823,7 +855,6 @@ header {
   padding-bottom: 3px;
   border-bottom: 3px solid var(--kanna-green);
 }
-
 
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1019,7 +1050,7 @@ header {
     padding-right: 30px; /* gutter width (give a little extra room) 2x default */
   }
 
-   .h-divider {
+   #h-divider {
     display:none;
   }
 
@@ -1190,13 +1221,15 @@ header {
 }
 @media only screen and (min-width: 1200px) {
  
-/*#card-kanna{
-      position: absolute;
-      top: 15%;
-      left: 35%;
-      width: 30%;
-  }
-*/
+#kanna-worker{
+  float: right;
+}
+
+#kanna-manager{
+  float: left;
+}
+
+#class="float-right"
 
 #btn-navbar-desktop{
   font-size: .625rem;
@@ -1317,8 +1350,65 @@ header {
 .news-entry p{
   font-size: 1rem;
 }
-#footer-desktop-aldagram-inc{
-  font-size: .625rem;
+
+.kanna-underline-news{
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid var(--kanna-green);
+}
+
+#news-main p{
+  padding-left:6rem;
+  padding-right:6rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#news-date p{
+  font-size: .875rem;
+  padding-left:6rem;
+  padding-right:6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#news-main h2{
+  padding-left:2rem;
+  padding-right:2rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/*format signup page*/
+
+#signup-kanna-box h1{
+  font-size: 2rem;
+}
+
+#signup-kanna-box h2{
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+#signup-kanna-box img{
+  width:340px;
+}
+
+#signup-kanna-box a{
+  font-size: 1.5rem;
+}
+
+#signup-kanna-box{
+  width: 1000px;
+  height:auto;
+}
+
+#news-container{
+  width: 1000px;
+  height:auto;
+}
+
+.h-divider{
+  width:872px;
 }
 
 }
