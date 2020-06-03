@@ -18,7 +18,11 @@ html {
 body, html {
   margin:0;
   padding: 0;
-  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*remove dotted outline anchor links*/
@@ -201,6 +205,16 @@ h1:first-child{
 .pr-7,
 .px-7 {
     padding-right: 7rem!important
+}
+
+.pb-8,
+.py-8 {
+    padding-bottom: 10rem!important
+}
+
+.pt-8,
+.py-8 {
+    padding-top: 10rem!important
 }
 
 .pb-4rem,
