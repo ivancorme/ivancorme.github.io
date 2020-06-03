@@ -917,6 +917,19 @@ header {
 
 }
 
+@media only screen and ( max-width: 373px ) {
+
+  #card-kanna h4{
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  #card-kanna h6{
+    font-size: 0.75rem;
+    line-height: 1.7;
+  }
+}
+
 @media only screen and ( min-width: 768px ) {
 
 /*main index section home formating */
