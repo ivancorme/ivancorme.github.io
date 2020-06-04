@@ -615,7 +615,8 @@ h1:first-child{
   width:311px;
   height: 48px;
   padding-top: 8px;
-  font:1.25rem;
+  font-size:1.25rem;
+  font-weight: 700;
 }
 
 .kanna-underline-news{
@@ -685,13 +686,6 @@ h1:first-child{
 }
 
 /* signup prerelease */
-
-.btn-signup{
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-
 
 /* */
 
@@ -957,8 +951,9 @@ header {
 .btn-signup{
   width:343px;
   height: 72px;
-  padding-top: 20px;
-  font:1.75rem;
+  padding-top: 14px;
+  font-size:1.75rem;
+  font-weight: 700;
 }
 
 /*main index section home formating */
