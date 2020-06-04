@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="411" viewBox="0 0 1280 411">
-  <g id="Group_1592" data-name="Group 1592" transform="translate(-4304 -5190)">
-    <rect id="Rectangle_1866" data-name="Rectangle 1866" width="1280" height="411" transform="translate(4304 5190)" fill="#00a26a"/>
-    <g id="Repeat_Grid_65" data-name="Repeat Grid 65" transform="translate(4304 5190)" opacity="0.12">
+  <g id="Group_1587" data-name="Group 1587" transform="translate(-1674 -3564)">
+    <g id="Group_1586" data-name="Group 1586">
+      <path id="Path_501" data-name="Path 501" d="M0,0H1280V411H0Z" transform="translate(1674 3564)" fill="#00a26a"/>
+    </g>
+    <g id="Repeat_Grid_64" data-name="Repeat Grid 64" transform="translate(1674 3564)" opacity="0.12">
       <g id="Group_1352" data-name="Group 1352" transform="translate(-11887 -4661)">
         <g id="Group_1353" data-name="Group 1353" transform="translate(-6 -14)">
           <rect id="Rectangle_1806" data-name="Rectangle 1806" width="24" height="1" transform="translate(11894 4676)" fill="#fff"/>
@@ -4483,6 +4485,7 @@
         </g>
       </g>
     </g>
-    <path id="Path_501" data-name="Path 501" d="M2797.135,1019.707h-402.59l402.59,411" transform="translate(2348.455 4170.293)" fill="#00a26a"/>
+    <path id="Path_500" data-name="Path 500" d="M2797.135,1019.707h-402.59l402.59,411" transform="translate(-281.545 2544.293)" fill="#00a26a"/>
+    <rect id="Rectangle_1864" data-name="Rectangle 1864" width="54" height="411" transform="translate(2516 3564)" fill="#00a26a"/>
   </g>
 </svg>
