@@ -18,7 +18,6 @@ body, html{
     overflow-x:hidden;
 }
 
-
 body, html {
   margin:0;
   padding: 0;
@@ -447,6 +446,14 @@ h1:first-child{
 }
 
 /*main index section home custom formatting*/
+
+.right_bubble{
+  width: 100%;
+}
+
+.left_bubble{
+  width: 100%;
+}
 
 .image-z{
   z-index: 10!important;
@@ -947,6 +954,15 @@ header {
 
 @media only screen and ( min-width: 768px ) {
 
+.right_bubble{
+  margin-left: 30%;
+  width: 45%;
+}
+
+.left_bubble{
+  margin-right: 30%;
+  width: 45%;
+}
 
 /*button to signup format*/
 .btn-signup{
@@ -1336,14 +1352,6 @@ header {
   width: 240px; 
   margin:0 auto;
   font-size: 14px;
-}
-
-#right_bubble_2{
-  margin-left: 30%;
-}
-
-#left_bubble_2{
-  margin-right: 30%;
 }
 
 #arrow-image{
