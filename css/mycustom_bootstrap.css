@@ -14,9 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body, html{
     overflow-x:hidden;
 }
+
 
 body, html {
   margin:0;
@@ -617,10 +618,10 @@ h1:first-child{
   font-weight: 700;
 }
 
-.kanna-underline-news{
+/*.kanna-underline-news{
   padding-bottom: 3px;
   border-bottom: 3px solid #00A26A;
-}
+}*/
 
 /*any news file  custom formating*/
 
@@ -945,6 +946,7 @@ header {
 }
 
 @media only screen and ( min-width: 768px ) {
+
 
 /*button to signup format*/
 .btn-signup{
@@ -1514,6 +1516,19 @@ header {
 
 .h-divider{
   width:872px;
+}
+
+@media only screen and (min-width: 1700px) {
+  #img-mobile-kanna{
+  width: 100%;
+}
+
+#img-desktop-kanna{
+/*  position: absolute;*/
+  width: 100%;
+  object-fit: cover;
+  object-position: 50px 0px;
+}
 }
 
 }
