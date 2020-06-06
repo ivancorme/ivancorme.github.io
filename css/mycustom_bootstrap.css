@@ -56,11 +56,11 @@ a {
     -webkit-box-shadow: 0 6px 6px -6px #999;
     -moz-box-shadow: 0 6px 6px -6px #999;
     box-shadow: 0 6px 6px -6px #999; 
-	margin-bottom: : 20px!important;
+  margin-bottom: : 20px!important;
  }
 
 /*.navbar-brand {
-	margin-left: 20px;
+  margin-left: 20px;
 }*/
 
 .navbar .nav-link{
@@ -135,12 +135,12 @@ a {
 }
 
 /*h1{
-	font-size:24px;
+  font-size:24px;
    }*/
 
 h1:first-child{
-	margin-top: 50px;
-	}
+  margin-top: 50px;
+  }
 
 .mt-6,
 .my-6 {
@@ -263,8 +263,9 @@ h1:first-child{
 #img-desktop-kanna{
 /*  position: absolute;*/
   width: 100%;
-  object-fit: cover;
-  object-position: 50px 0px;
+  /*object-fit: cover;
+  object-position: 50px 0px;*/
+  margin-left:50px;
 }
 
 /* begining of service worker and manager */
@@ -326,11 +327,11 @@ h1:first-child{
 }
 
 .bg-kanna-green{
-	background: #00A26A!important
+  background: #00A26A!important
 }
 
 .bg-kanna-light-grey{
-	/*background: rgba(17, 17, 17, .05);!important*/
+  /*background: rgba(17, 17, 17, .05);!important*/
   background: rgba(17, 17, 17, .05);
 }
 
@@ -808,7 +809,7 @@ h1:first-child{
 }
 
 /*.footer .a {
-	font-size: 10px!important;
+  font-size: 10px!important;
 }*/
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -820,7 +821,7 @@ h1:first-child{
 }
 
 footer a{
-	font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 header {
@@ -878,7 +879,7 @@ header {
 }
 
 .breadcrumb li a{
-	color: #00A26A;
+  color: #00A26A;
   font-size: 12px;
 }
 
@@ -1320,7 +1321,7 @@ header {
 
 }
 @media only screen and (min-width: 1200px) {
- 
+ overflow-y: hidden;
 #kanna-worker{
   float: right;
 }
@@ -1519,7 +1520,7 @@ header {
 
 #signup-kanna-box{
   width: 1000px;
-  height:auto;
+  height:500px;
 }
 
 #news-container{
@@ -1544,4 +1545,3 @@ header {
 }
 }
 
-}
