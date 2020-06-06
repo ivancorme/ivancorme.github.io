@@ -1421,7 +1421,7 @@ header {
   display: none;
 }
 
-#concept-destktop{
+#concept-desktop{
   display: block;
 }
 
@@ -1530,6 +1530,19 @@ header {
 
 .h-divider{
   width:872px;
+}
+}
+
+@media only screen and (min-width: 1700px) {
+  #img-mobile-kanna{
+  width: 100%;
+}
+
+#img-desktop-kanna{
+/*  position: absolute;*/
+  width: 100%;
+  object-fit: cover;
+  object-position: 50px 0px;
 }
 }
 
